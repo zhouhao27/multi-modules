@@ -35,3 +35,29 @@ $ git push
 ```
 
 ## How to update a sub module
+
+1. Modify the sub module
+
+```
+# Do modification
+$ cd sub-project1
+$ touch test.txt
+$ git add .
+$ git commit -m "Add a new file"
+$ git push
+
+# Commit in main repository
+$ git add sub-project1
+$ git commit -m "Modify sub-project1"
+$ git push
+```
+
+2. The sub module updated by the others
+
+```
+# Goto sub module folder
+$ git pull
+```
+
+> So that means we have to know there is a modifications in the sub module. `git status` won't see the changes. 
+
