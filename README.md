@@ -1,5 +1,7 @@
 # Multiple submodules example
 
+## How to create a sub module
+
 1. Create a main project in github
 
 https://github.com/zhouhao27/multi-modules
@@ -24,5 +26,12 @@ https://github.com/zhouhao27/sub-project1
 $ git submodule add https://github.com/zhouhao27/sub-project1
 ```
 
+5. Add and commit the changes to main repository
 
+```
+$ git add .
+$ git commit -m "Add sub module sub-project1"
+$ git push
+```
 
+## How to update a sub module
