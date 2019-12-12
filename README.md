@@ -88,6 +88,11 @@ $ git commit -m "Update"
 $ git push
 ```
 
+> To simplify, should use `git submodule update --remote --merge` so that we don't need to merge manually.
+
+## How to clone with submodules
+
+
 
 
 
