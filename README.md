@@ -61,3 +61,19 @@ $ git pull
 
 > So that means we have to know there is a modifications in the sub module. `git status` won't see the changes. 
 
+```
+# Goto main repository
+$ git add sub-project1
+$ git commit -m "sub-project1 updated"
+$ git push
+```
+
+> So there is a better way to do all these by using `git submodule update --remote`
+
+```
+# Change the sub module by somebody else
+$ git submodule update --remote
+```
+
+
+
