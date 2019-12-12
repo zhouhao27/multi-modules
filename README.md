@@ -68,12 +68,27 @@ $ git commit -m "sub-project1 updated"
 $ git push
 ```
 
-> So there is a better way to do all these by using `git submodule update --remote`
+> So there is another way to do all these by using `git submodule update --remote`
 
 ```
 # Change the sub module by somebody else
 $ git submodule update --remote
+
+# The submodule will become `HEAD detached at 00fd30d`
+$ cd sub-project1
+
+# Create the branch
+$ git checkout -b 00fd30d
+$ git checkout master
+$ git merge 00fd30d
+
+# Commit in main repository
+$ git add sub-project1
+$ git commit -m "Update"
+$ git push
 ```
+
+
 
 
 
